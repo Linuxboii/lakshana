@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lakshana"
+version = "1.0.0"
+description = "Offline phishing URL heuristic analyzer that explains every signal it scores"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sushanth Kasturi" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+lakshana = "lakshana.cli:main"
+
+[tool.setuptools]
+packages = ["lakshana"]
